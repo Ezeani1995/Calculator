@@ -18,7 +18,7 @@ function validateInput() {
   if (input.value === "") {
     resultDiv.classList.add("error");
     return "Input field mustn't be empty!";
-  } else if (isNaN(finalResult)) {
+  } else if (isNaN(finalResult) || input.value < 1890) {
     resultDiv.classList.add("error");
     return `Input value not supported!`;
   } else {
